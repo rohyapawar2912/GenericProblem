@@ -8,26 +8,17 @@ namespace GenericProblem
 {
     public class MaxValue<T> where T : IComparable<T>
     {
-        private T val1;
-        private T val2;
-        private T val3;
+        private T[] values;
 
-        public MaxValue(T val1, T val2, T val3)
+        public MaxValue(params T[] values)
         {
-            this.val1 = val1;
-            this.val2 = val2;
-            this.val3 = val3;
+            this.values = values;
         }
 
         public T FindMax()
         {
-            T max = val1;
-            if (val2.CompareTo(max) > 0)
-                max = val2;
-            if (val3.CompareTo(max) > 0)
-                max = val3;
-
-            return max;
+            Array.Sort(values);
+            return values[values.Length - 1];
         }
     }
 }

@@ -22,6 +22,18 @@ namespace GenericProblem
             MaxValue<string> stringMaxValue = new MaxValue<string>("Apple", "Peach", "Banana");
             string stringResult = stringMaxValue.FindMax();
             Console.WriteLine($"The maximum string is: {stringResult}");
+
+            MaxValue<int> moreIntMaxValue = new MaxValue<int>(10, 5, 8, 15, 20);
+            int moreIntResult = moreIntMaxValue.FindMax();
+            Console.WriteLine($"The maximum integer is: {moreIntResult}");
+
+            MaxValue<double> moreDoubleMaxValue = new MaxValue<double>(3.14, 1.23, 2.45, 4.56, 0.99);
+            double moreDoubleResult = moreDoubleMaxValue.FindMax();
+            Console.WriteLine($"The maximum double is: {moreDoubleResult}");
+
+            MaxValue<string> moreStringMaxValue = new MaxValue<string>("Apple", "Peach", "Banana", "Orange");
+            string moreStringResult = moreStringMaxValue.FindMax();
+            Console.WriteLine($"The maximum string is: {moreStringResult}");
         }
     }
 }
