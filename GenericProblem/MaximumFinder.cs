@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace GenericProblem
 {
-    internal class MaximumFinder
+    public class MaximumFinder
     {
+        public int FindMaxNumber(int num1, int num2, int num3)
+        {
+            return num1;
+        }
+
     }
 }
