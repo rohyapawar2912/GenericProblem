@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace GenericProblem
 {
-    public class MaxValue
+    public class MaxValue<T> where T : IComparable<T>
     {
-        public T FindMax<T>(T val1, T val2, T val3) where T : IComparable<T>
+        private T val1;
+        private T val2;
+        private T val3;
+
+        public MaxValue(T val1, T val2, T val3)
+        {
+            this.val1 = val1;
+            this.val2 = val2;
+            this.val3 = val3;
+        }
+
+        public T FindMax()
         {
             T max = val1;
             if (val2.CompareTo(max) > 0)
