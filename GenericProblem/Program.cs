@@ -10,17 +10,17 @@ namespace GenericProblem
     {
         static void Main(string[] args)
         {
-            Float finder = new Float();
+            MaxString finder = new MaxString();
 
             // Test with different scenarios
-            float result1 = finder.FindMaxNumber(3.7f, 2.5f, 4.8f);
-            Console.WriteLine($"The maximum number is: {result1}");
+            string result1 = finder.FindMaxString("Apple", "Peach", "Banana");
+            Console.WriteLine($"The maximum string is: {result1}");
 
-            float result2 = finder.FindMaxNumber(6.2f, 9.1f, 5.4f);
-            Console.WriteLine($"The maximum number is: {result2}");
+            string result2 = finder.FindMaxString("Cat", "Dog", "Elephant");
+            Console.WriteLine($"The maximum string is: {result2}");
 
-            float result3 = finder.FindMaxNumber(1.9f, 7.3f, 6.5f);
-            Console.WriteLine($"The maximum number is: {result3}");
+            string result3 = finder.FindMaxString("Orange", "Grapes", "Watermelon");
+            Console.WriteLine($"The maximum string is: {result3}");
 
         }
     }
