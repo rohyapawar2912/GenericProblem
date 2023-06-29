@@ -13,13 +13,13 @@ namespace GenericProblem
             MaximumFinder finder = new MaximumFinder();
 
             // Test with different scenarios
-            int result1 = finder.FindMaxNumber(10, 5, 8);
+            int result1 = finder.FindMaxNumber(5, 10, 8);
             Console.WriteLine($"The maximum number is: {result1}");
 
-            int result2 = finder.FindMaxNumber(15, 12, 9);
+            int result2 = finder.FindMaxNumber(12, 15, 9);
             Console.WriteLine($"The maximum number is: {result2}");
 
-            int result3 = finder.FindMaxNumber(20, 18, 14);
+            int result3 = finder.FindMaxNumber(18, 20, 14);
             Console.WriteLine($"The maximum number is: {result3}");
         }
     }
