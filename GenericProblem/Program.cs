@@ -12,28 +12,22 @@ namespace GenericProblem
         {
             // Test with different scenarios
             MaxValue<int> intMaxValue = new MaxValue<int>(10, 5, 8);
-            int intResult = intMaxValue.FindMax();
-            Console.WriteLine($"The maximum integer is: {intResult}");
+            intMaxValue.PrintMax();
 
             MaxValue<double> doubleMaxValue = new MaxValue<double>(3.14, 1.23, 2.45);
-            double doubleResult = doubleMaxValue.FindMax();
-            Console.WriteLine($"The maximum double is: {doubleResult}");
+            doubleMaxValue.PrintMax();
 
             MaxValue<string> stringMaxValue = new MaxValue<string>("Apple", "Peach", "Banana");
-            string stringResult = stringMaxValue.FindMax();
-            Console.WriteLine($"The maximum string is: {stringResult}");
+            stringMaxValue.PrintMax();
 
             MaxValue<int> moreIntMaxValue = new MaxValue<int>(10, 5, 8, 15, 20);
-            int moreIntResult = moreIntMaxValue.FindMax();
-            Console.WriteLine($"The maximum integer is: {moreIntResult}");
+            moreIntMaxValue.PrintMax();
 
             MaxValue<double> moreDoubleMaxValue = new MaxValue<double>(3.14, 1.23, 2.45, 4.56, 0.99);
-            double moreDoubleResult = moreDoubleMaxValue.FindMax();
-            Console.WriteLine($"The maximum double is: {moreDoubleResult}");
+            moreDoubleMaxValue.PrintMax();
 
             MaxValue<string> moreStringMaxValue = new MaxValue<string>("Apple", "Peach", "Banana", "Orange");
-            string moreStringResult = moreStringMaxValue.FindMax();
-            Console.WriteLine($"The maximum string is: {moreStringResult}");
+            moreStringMaxValue.PrintMax();
         }
     }
 }

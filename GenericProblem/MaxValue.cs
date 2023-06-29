@@ -20,5 +20,11 @@ namespace GenericProblem
             Array.Sort(values);
             return values[values.Length - 1];
         }
+
+        public void PrintMax()
+        {
+            T max = FindMax();
+            Console.WriteLine($"The maximum value is: {max}");
+        }
     }
 }
